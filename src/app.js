@@ -5,6 +5,8 @@ const app = express();
 
 app.use(express.json());
 
+const unusedValue = 'remove me';
+
 // Intro route.
 app.get('/', (_req, res) => {
   res.status(200).json({ message: 'Welcome to the starter lint/format API' });
