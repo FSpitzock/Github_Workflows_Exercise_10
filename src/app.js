@@ -5,7 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-const unusedValue = 'remove me';
 
 // Intro route.
 app.get('/', (_req, res) => {
