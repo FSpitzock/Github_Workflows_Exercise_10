@@ -31,3 +31,12 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+
+             # TODO: Add Snyk scan step and use SNYK_TOKEN secret.
+      - name: Run Snyk scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: test
