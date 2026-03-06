@@ -5,7 +5,6 @@ const app = express();
 
 app.use(express.json());
 
-
 // Intro route.
 app.get('/', (_req, res) => {
   res.status(200).json({ message: 'Welcome to the starter lint/format API' });
